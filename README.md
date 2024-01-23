@@ -1,8 +1,6 @@
 # P5js Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of the plugin.**
-
-The **P5js** Plugin is an extension for [Grav CMS](https://github.com/getgrav/grav). p5js functionality
+The **P5js** Plugin is an extension for [Grav CMS](https://github.com/getgrav/grav). p5js functionality. It allows embedding p5js canvases.
 
 ## Installation
 
@@ -38,19 +36,29 @@ Here is the default configuration and an explanation of available options:
 
 ```yaml
 enabled: true
+active: true
 ```
 
 Note that if you use the Admin Plugin, a file with your configuration named p5js.yaml will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
 
 ## Usage
 
-**Describe how to use the plugin.**
+This Plugin extends [shortcode-core](https://github.com/getgrav/grav-plugin-shortcode-core) and adds a Shortcode `[p5js]` to be used. E.g.:
 
-## Credits
+```
+[p5js canvas=c1]
+function setup() {
+  createCanvas(400, 400, document.getElementById('c1'));
+}
 
-**Did you incorporate third-party code? Want to thank somebody?**
+function draw() {
+  background(220);
+}
+```
+
+Creates a canvas of a ID `c1` and applies the p5js-code thereto. Multiple p5js-canvases can be added by setting different IDs.
 
 ## To Do
 
-- [ ] Future plans, if any
+- [ ] Avoid having to set a `canvas-ID` (e.g. use random ID?)
 
