@@ -1,0 +1,45 @@
+name: P5js
+slug: p5js
+type: plugin
+version: 0.2.0
+description: Adding p5js functionality to website by using [p5js] shortcode.
+icon: plug
+author:
+  name: Max Zangs
+  email: maximilian.zangs@gmail.com
+homepage: https://github.com/muxelmann/grav-plugin-p5js
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/muxelmann/grav-plugin-p5js/issues
+docs: https://github.com/muxelmann/grav-plugin-p5js/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+  - shortcode-core
+
+form:
+  validation: loose
+
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGINS.P5JS.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    active:
+      type: toggle
+      label: PLUGINS.P5JS.ACTIVE
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.YES
+        0: PLUGIN_ADMIN.NO
+      validate:
+        type: bool

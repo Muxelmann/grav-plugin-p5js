@@ -1,0 +1,13 @@
+en:
+  PLUGINS:
+    P5JS:
+      P5JS: "p5JS"
+      PLUGIN_STATUS: "Plugin status"
+      ACTIVE: "Activate <code>p5js</code> on this site"
+
+de:
+  PLUGINS:
+    P5JS:
+      P5JS: "p5JS"
+      PLUGIN_STATUS: "Plugin Status"
+      ACTIVE: "Aktiviere <code>p5js</code> auf Seite"

@@ -1,0 +1,24 @@
+{
+  "name": "muxelmann/p5js",
+  "type": "grav-plugin",
+  "description": "p5js functionality",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/muxelmann/grav-plugin-p5js",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Max Zangs",
+      "email": "maximilian.zangs@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\P5js\\": "classes/"
+    },
+    "classmap":  ["p5js.php"]
+  }
+}
